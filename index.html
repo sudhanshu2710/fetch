@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 30px;
+
+        background: linear-gradient(rgb(10, 54, 48), rgb(18, 54, 49));
+      }
+      img {
+        height: 20%px;
+        width: 15%px;
+        border-radius: 5px;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-weight: 900;
+        color: rgb(18, 12, 54);
+      }
+      .card {
+        padding-top: 30px;
+        background: linear-gradient(rgb(18, 36, 44), rgb(132, 213, 238));
+        border-radius: 10px;
+        margin: 20px;
+        text-align: center;
+        width: 70%;
+        height: 300px;
+      }
+      @media screen and (max-width: 1002px) {
+        .main {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 592px) {
+        .main {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(138, 168, 221);
+      "
+    >
+      User Details
+    </div>
+    <div class="main"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
